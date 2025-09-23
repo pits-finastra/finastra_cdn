@@ -1,5 +1,6 @@
 [[headers]]
-  for = "/change_log/*"
+  for = "/change-log/*"
   [headers.values]
     Access-Control-Allow-Origin = "*"
     Access-Control-Allow-Headers = "*"
+    Access-Control-Allow-Methods = "GET, OPTIONS"
