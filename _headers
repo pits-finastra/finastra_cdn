@@ -1,7 +1,4 @@
-/*
-  Access-Control-Allow-Origin: *
-  Access-Control-Allow-Headers: *
-
 /change_log/*
   Access-Control-Allow-Origin: *
-
+  Access-Control-Allow-Headers: *
+  Access-Control-Allow-Methods: GET, OPTIONS
