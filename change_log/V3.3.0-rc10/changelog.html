@@ -8,7 +8,44 @@
         <li>JV Detail page</li>
         <li>Saving interest SMS to member during interest payment</li>
         <li>Updated Guarantee working, now can block amount using multiple types (partial, full)</li>
-        <li></li>
+        <li>
+            <details>
+                <ul>
+                    <li>
+                        Old behavior: Paying before the installment date would mark all installments as paid, and the
+                        receipt bill would show the remaining installments data.
+                    </li>
+                    <li>New behavior
+                        <ul>
+                            <li>Only installments up to the payment date are marked as paid.</li>
+                            <li>Future installments remain unpaid with a 0 to pay amount until the installment date.
+                            </li>
+                            <li>Pending installments (with amounts already paid) will be marked as paid the day after
+                                the installment due date.
+                            </li>
+                            <li>Loan Receipt bill includes interest on the remaining principal up to the loan
+                                installment
+                                date.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <summary>Loan Pre-Payment Handling</summary>
+            </details>
+        </li>
+        <li>
+            <details>
+                <ul>
+                    <li>
+                        InsClearByPrinciple is enabled by default, which means if the principal amount equal to paying
+                        installment principal is paid during a
+                        loan payment, the corresponding loan installment will automatically be marked as paid.
+                    </li>
+                </ul>
+                <summary>Auto InsClearByPrinciple</summary>
+            </details>
+        </li>
     </ul>
     <h4>🔨 Fixes</h4>
     <ul>
