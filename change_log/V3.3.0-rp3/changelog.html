@@ -1,0 +1,325 @@
+<div id="x__c__main_content">
+    <h3>✨ V 3.3.0-rp3</h3>
+    <h4>🔨 Fixes</h4>
+    <ul>
+        <li>Branch filter in Loan Issue Report</li>
+        <li>Issue in Journal Voucher</li>
+        <li>Date upto issue in Dividend & PF</li>
+        <li>Balance issue in Vault</li>
+        <li>Remarks max length</li>
+        <li>Coming installment in dashboard</li>
+        <li>Error in identification</li>
+        <li>Grandson option in member creation</li>
+        <li>TTR issue</li>
+    </ul>
+    <hr/>
+    <h3>✨ V 3.3.0-rp2</h3>
+    <h4>🔨 Fixes</h4>
+    <ul>
+        <li>Date filter in loan issue report</li>
+        <li>Salary calculation and payment</li>
+        <li>OD loan renew</li>
+        <li>Transaction verification page error</li>
+        <li>Account statement issue</li>
+        <li>Nepali select for loan types in Loan Search</li>
+        <li>Total amount display in payable report (Excel, Pdf)</li>
+        <li>M-banking filter in Deposit and Withdraw Report</li>
+        <li>Agent and User filter in Dcs Report</li>
+        <li>Date wise interest in loan receivable report</li>
+    </ul>
+    <hr/>
+    <h3>✨ V 3.3.0-rp1</h3>
+    <h4>🪶 Features</h4>
+    <ul>
+        <li>Loan settlement account (Now can use normal saving accounts)</li>
+    </ul>
+    <h4>🔨 Fixes</h4>
+    <ul>
+        <li>Future date loan interest calculation from loan receivable report</li>
+        <li>Summary checkbox issue in loan receipt report</li>
+        <li>Identification requirement issue in (Deposit, Withdraw, Loan Receipt)</li>
+        <li>Fixes in tageta patra</li>
+        <li>Loan payment reverse from Dcs Collection Sheet</li>
+        <li>Sms issue from Dcs/Deposit collection sheet</li>
+        <li>Salary payment issue</li>
+        <li>Citizenship number issue in Share Certificate</li>
+        <li>Branch filter issue in Member-wise Balance Report</li>
+        <li>Auto transaction verification (JV, Deposit, Loan)</li>
+    </ul>
+    <hr/>
+    <h3>✨ V 3.3.0</h3>
+    <h4>🪶 Features</h4>
+    <ul>
+        <li>TTR setup and reporting</li>
+        <li>Loan Payment and birthday notification automation</li>
+        <li>Member Approval System with draft member number</li>
+        <li>EMI type selection during loan issuance</li>
+        <li>JV Detail page</li>
+        <li>Saving interest SMS to member during interest payment</li>
+        <li>Updated Guarantee working, now can block amount using multiple types (partial, full)</li>
+        <li>Option for cheque amount while issuing cheque</li>
+        <li>Member and Loan number wise search in Loan and Liability Report</li>
+        <li>Account number filter in <strong>Liability Balance Upto</strong> report</li>
+        <li>Periodic and Kramik maturity in days</li>
+        <li>Fd renew template and certificate</li>
+        <li>Discount variable in loan receipt SMS template</li>
+        <li>Saving and Loan header update in bulk</li>
+        <li>Bank Import</li>
+        <li>Account Type wise tax rate setup</li>
+        <li>Interest credit report</li>
+        <li>
+            <details>
+                <ul>
+                    <li>
+                        Old behavior: Paying before the installment date would mark all installments as paid, and the
+                        receipt bill would show the remaining installments data.
+                    </li>
+                    <li>New behavior
+                        <ul>
+                            <li>Only installments up to the payment date are marked as paid.</li>
+                            <li>Future installments remain unpaid with a 0 to pay amount until the installment date.
+                            </li>
+                            <li>Pending installments (with amounts already paid) will be marked as paid the day after
+                                the installment due date.
+                            </li>
+                            <li>Loan Receipt bill includes interest on the remaining principal up to the loan
+                                installment
+                                date.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <summary>Loan Pre-Payment Handling</summary>
+            </details>
+        </li>
+        <li>
+            <details>
+                <ul>
+                    <li>
+                        InsClearByPrinciple is enabled by default, which means if the principal amount equal to paying
+                        installment principal is paid during a
+                        loan payment, the corresponding loan installment will automatically be marked as paid.
+                    </li>
+                </ul>
+                <summary>Auto InsClearByPrinciple</summary>
+            </details>
+        </li>
+    </ul>
+    <h4>🔨 Fixes</h4>
+    <ul>
+        <li>Pagination in Bank Transaction Report</li>
+        <li>Opening balance in Loan Type wise Balance Report</li>
+    </ul>
+
+    <hr/>
+    <h3>✨ V 3.2.1.0</h3>
+    <h4>🪶 Features</h4>
+    <ul>
+        <li>COPOMIS Report added under Accounts > COPOMIS</li>
+    </ul>
+    <hr/>
+    <h3>✨ V 3.2.0.5-rp3</h3>
+    <h4>🪶 Features</h4>
+    <ul>
+        <li>Pan info in identification information</li>
+    </ul>
+    <h4>🔨 Fixes</h4>
+    <ul>
+        <li>Loan Tageta Patra column <strong>भा. ना. साँवा</strong> changed to <strong>बाँकी साँवा</strong></li>
+        <li>Fix loan number search filter in Loan Liabilities Report</li>
+        <li>Loan and liability assignment from bulk loan and liability relation</li>
+        <li>Account view issue if account open is from Share Dividend Distribution</li>
+        <li>Validation of citizenship number in active member only</li>
+    </ul>
+    <hr/>
+    <h3>✨ V 3.2.0.5-rp2</h3>
+    <h4>🔨 Fixes</h4>
+    <ul>
+        <li>Now onwards share number will be member number</li>
+        <li>Member count and shareholder count in dashboard and Swet Patra</li>
+        <li>Validation in nominee date of birth</li>
+        <li>Remarks in dividend distribution</li>
+    </ul>
+    <hr/>
+    <h3>✨ V 3.2.0.5-rp1</h3>
+    <h4>🔨 Fixes</h4>
+    <ul>
+        <li>Clear loan in Expired Installment Report</li>
+        <li>Parent Member Contact and Address issue in Dependent Member Report</li>
+        <li>Relative details in Loan Detail Report</li>
+        <li>All LA account displays in Liability Report</li>
+        <li>Wrong interest rate in FD Renew Certificate</li>
+        <li>Back-dated payable amount in Payable Report</li>
+        <li>Payable amount in Paid Interest Report</li>
+    </ul>
+    <hr/>
+    <h3>✨ V 3.2.0.5</h3>
+    <h4>🪶 Features</h4>
+    <ul>
+        <li>Record support ticket direct from FinAstra</li>
+        <li>Auto loan-liability relation close during loan issue reverse</li>
+        <li>Interest setup update after maturity/open date edit from Account Edit</li>
+    </ul>
+    <h4>🔨 Fixes</h4>
+    <ul>
+        <li>Blank data issue in Paid Interest Report</li>
+        <li>After maturity recorded by issue after account renewal</li>
+        <li>Member number display in Tageta Patra</li>
+        <li>Multiple date interest display issue in Loan Receipt Bill</li>
+        <li>Jv print functionality</li>
+        <li>Blank Interest rate in Account Statement</li>
+        <li>Deposit date interest rate display in FD Deposit Certificate</li>
+        <li>Total Assets in Pearls Report (All Branch Filter)</li>
+    </ul>
+    <h4>🔨 Performance Optimization</h4>
+    <ul>
+        <li>Share dividend calculation and distribution</li>
+    </ul>
+    <hr/>
+    <h3>✨ V 3.2.0.4-rp1</h3>
+    <h4>🔨 Fixes</h4>
+    <ul>
+        <li>Loan bill print issue if loan payment is done in loan issue date</li>
+        <li>Amount issue in the next installment on a loan receipt bill if the loan is cleared before loan expiry</li>
+        <li>Interest TDS Report export issue</li>
+        <li>Language conversion in Search Bill</li>
+    </ul>
+    <hr/>
+    <h3>✨ V 3.2.0.4</h3>
+    <h4>🪶 Features</h4>
+    <ul>
+        <li>Member filter in Top NCRA Reports</li>
+        <li>Saving type exclude filter in Top Saving Accounts—NCRA Report</li>
+    </ul>
+    <h4>🔨 Fixes</h4>
+    <ul>
+        <li>Fix 0 Amount in Expired Installment Report</li>
+        <li>Allow access to All Branch Manager for NCRA Reports by default</li>
+        <li>Replaced permanent address with temporary address in Top NCRA Report</li>
+        <li>FD certificate print from Account Statement</li>
+    </ul>
+    <hr/>
+    <h3>✨ V 3.2.0.3-rp1</h3>
+    <h4>🪶 Features</h4>
+    <ul>
+        <li>NCRA Reports for top Share, Saving, Loan</li>
+        <li>Separate print for transaction done from All in One Receipt</li>
+    </ul>
+    <h4>🔨 Fixes</h4>
+    <ul>
+        <li>Date-wise Net Interest Rate Spread</li>
+        <li>Date-wise Interest Rate in Account Holder Search</li>
+        <li>Date-wise Interest Rate in Account Statement and Account View</li>
+        <li>Remit Statement</li>
+        <li>Mismatch in Paid Interest Report</li>
+        <li>Type-wise member number during Member Registration</li>
+        <li>Missing contact info from Organization Member</li>
+        <li>Closing balance in Ledger Statement</li>
+        <li>Dashboard count issue</li>
+        <li>Loan fine calculation issue</li>
+    </ul>
+    <hr/>
+    <h3>✨ V 3.2.0.3</h3>
+    <h4>🪶 Features</h4>
+    <ul>
+        <li>Separate Child Member registration form</li>
+        <li>Additional variable added on Deposit and Withdraw SMS Template</li>
+        <li>Loan–Liability relation auto-unlink during Loan Clear</li>
+        <li>PDF and Excel download based on selected language</li>
+        <li>Pagination and Sorting</li>
+        <li>Loan and Liability Collection Sheet Print</li>
+    </ul>
+    <h4>🔨 Fixes</h4>
+    <ul>
+        <li>Share Certificate language issue</li>
+        <li>Share Certificate Parent Name issue</li>
+        <li>Back-dated login member count on dashboard</li>
+        <li>Maturity issue on LA Account</li>
+        <li>Next installment amount issue on Loan Bill (Bill will now calculate receivable installment till EMI date)
+        </li>
+        <li>Loan Bill print in case of loan clear</li>
+        <li>Removed interest on range and tax on range from accounts if setup is unavailable</li>
+        <li>Decimal issue while viewing interest rate after maturity on Update Interest</li>
+        <li>Date-wise interest rate display in Account Wise Balance</li>
+        <li>Branch-wise access for Transaction Verification</li>
+        <li>Transaction verification list by voucher instead of SearchTxnKey</li>
+    </ul>
+
+    <hr/>
+    <h3>✨ V 3.2.0.2-rp4</h3>
+    <h4>🔨 Fixes</h4>
+    <ul>
+        <li>Loan Receipt print</li>
+        <ul>
+            <li>Multiple Interest rate displayed</li>
+            <li>Interest rate error on backdated receipt print</li>
+            <li>Loan status on Next Ins info - Error Fixed</li>
+            <li>Payment Made (Default Remarks) now works with language change</li>
+        </ul>
+        <li>Date and month filter reset after submit</li>
+        <li>Change log display error</li>
+        <li>Swet patra print error</li>
+        <li>Fiscal year in Monthly report - Subject</li>
+    </ul>
+
+    <hr/>
+
+    <h3>✨ V 3.2.0.2-rp3</h3>
+    <h4>🔨 Fixes</h4>
+    <ul>
+        <li>Loan Receipt print</li>
+        <li>Error on Custom Sms Send</li>
+        <li>Error during Member merge</li>
+        <li>Data error on Swet Patra</li>
+    </ul>
+
+    <hr/>
+
+    <h3>✨ V 3.2.0-rp1</h3>
+    <h4>🔨 Features / Fixes</h4>
+    <ul>
+
+    </ul>
+
+    <hr/>
+    <h3>✨ V 3.2.0-rp1</h3>
+    <h4>🔨 Features / Fixes</h4>
+    <ul>
+        <li>When Calculate and Record payable step is enabled, the value of SavingIntDecDigit is set to 2
+            automatically
+        </li>
+        <li>Transaction verification issue fixed when day close is not enabled</li>
+    </ul>
+
+    <hr/>
+
+    <h3>✨ V 3.2.0</h3>
+    <h4>🔨 Features</h4>
+    <ul>
+        <li>Enhanced Master Setting View</li>
+        <li>Daily Payable Record on day close</li>
+        <li>Member Family Info Record</li>
+        <li>Member Risk Setup</li>
+        <li>Multiple Nominee of Member</li>
+        <li>Member record of other Cooperatives and Bank Account</li>
+        <li>Swet Patra</li>
+        <li>Eligile Interest For Accumulation Report</li>
+        <li>Dosari Report with Committee Setup</li>
+        <li>Paginated Report in Member and Saving</li>
+        <li>Bulk Interest update</li>
+        <li>Bulk Tax update</li>
+        <li>Interest rate update on account renew</li>
+        <li>Custom Interest After Maturity of Account</li>
+    </ul>
+
+    <h4>🔨 Performance Optimization</h4>
+    <ul>
+        <li>Share Dividend Posting</li>
+        <li>PF Posting</li>
+        <li>Payable Interest Reverse</li>
+        <li>Loan Collection sheet</li>
+    </ul>
+
+    <hr/>
+</div>
