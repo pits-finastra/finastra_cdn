@@ -1,8 +1,63 @@
-<div id="x__c__main_content">    
+<div id="x__c__main_content">
+    <h3>✨ V 3.5.0</h3>
+    <h4>🪶 Features</h4>
+    <ul>
+        <li>Separate nav alignment for DCS</li>
+        <li>Daily collection sheet print</li>
+        <li>SMS reactivate for deactivated accounts</li>
+        <li>Enhance user password reset and add user password reset log report</li>
+        <li>Loan type filter in Loan Search and Loan Issue Report</li>
+        <li>Accounting date standardization (Date to = login date)</li>
+        <li>Loan receipt summary by member number</li>
+        <li>Single session for user (one user can only login in one system at a time)</li>
+        <li>Partial installment for kramik accounts</li>
+        <li>Enhance share return bill</li>
+        <li>Add remaining principal amount in loan renew report</li>
+        <li>Max attempt enforce on login and DCS transaction pin controlled from master setting along with log, reset
+            feature
+        </li>
+        <li>Service charge during bank transfer</li>
+    </ul>
+    <h4>🔨 Fixes</h4>
+    <ul>
+        <li>Fine calculation and display due fine in loan payment interest details</li>
+        <li>Lang conversion issue in deposit print</li>
+        <li>Bank transaction user filter</li>
+        <li>Wrong amount in cash book</li>
+    </ul>
+    <h4>🔥 Breaking Changes</h4>
+    <ul>
+        <li>
+            <details>
+                <ul>
+                    <li>
+                        Old behavior
+                        <ul>
+                            <li>Fine calculation on due int which sometimes exceed loan remaining principal</li>
+                        </ul>
+                    </li>
+                    <li>New behavior
+                        <ul>
+                            <li>Fine calculation will be in per day basis</li>
+                            <li>Removed /365 has been added in new release</li>
+                            <li>Interest rate ++ will calculate per day fine of remaining principal and /365 will be
+                                applied even if disabled in fine setup
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <summary>Loan Fine Calculation</summary>
+            </details>
+        </li>
+    </ul>
+    <hr>
     <h3>✨ V 3.4.0-rp4</h3>
     <h4>🔨 Fixes</h4>
     <ul>
-       <li>Interest rate change and loan renew reverse for loan if emi type is normal and principal period is not equal to interest period</li>
+        <li>Interest rate change and loan renew reverse for loan if emi type is normal and principal period is not equal
+            to interest period
+        </li>
         <li>Income amount error during YC fund distribution</li>
         <li>Payable and payment from day close for closed accounts</li>
         <li>Account list display in saving account transfer sheet</li>
@@ -13,19 +68,20 @@
         <li>Print issue of account renewed certificate</li>
         <li>Interest payment from Day Close</li>
     </ul>
-    <hr/>    <h3>✨ V 3.4.0-rp3</h3>
+    <hr/>
+    <h3>✨ V 3.4.0-rp3</h3>
     <h4>🔨 Fixes</h4>
     <ul>
-       <li>Day voucher number isn’t showing up after closing the day</li>
+        <li>Day voucher number isn’t showing up after closing the day</li>
         <li>Loan type-wise balance report</li>
         <li>DCS collection sheet(ignore if installment amount is set to 0)</li>
-        <li>Account wise balance report</li>      
+        <li>Account wise balance report</li>
     </ul>
     <hr/>
     <h3>✨ V 3.4.0-rp2</h3>
     <h4>🔨 Fixes</h4>
     <ul>
-       <li>Loan EMI issue after renewal/EMI reset</li>
+        <li>Loan EMI issue after renewal/EMI reset</li>
         <li>Deleted loan receivable payment</li>
         <li>Block installment payment of saving from interest, PF and share dividend</li>
         <li>Missing interest rate and tenure from loan issue report</li>
